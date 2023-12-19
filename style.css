@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+  --dark-color: #212529;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--dark-color);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+
+/* Section Header */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(230, 229, 229, 0.718), rgb(235, 235, 235)),
+    url(https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/landscape/Hero-img-02.jpg)
+      center no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.heading {
+  font-size: 8rem;
+  color: var(--dark-color);
+}
+
+.header-paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+  max-width: 60rem;
+  margin: auto;
+}
+/* End Section Header */
+
+/* Logo */
+
+.logo {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.logo h1 {
+  display: flex;
+}
+
+.logo h1 span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1) {
+  animation: drop-letters 5s 0.1s infinite;
+}
+.logo h1 span:nth-child(2) {
+  animation: drop-letters 5s 0.2s infinite;
+}
+.logo h1 span:nth-child(3) {
+  animation: drop-letters 5s 0.3s infinite;
+}
+.logo h1 span:nth-child(4) {
+  animation: drop-letters 5s 0.4s infinite;
+}
+.logo h1 span:nth-child(5) {
+  animation: drop-letters 5s 5s infinite;
+}
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* End of Logo */
+
+/* Sub-Hero Image */
+
+.header-img {
+  width: 35%;
+  object-fit: cover;
+  padding: 5rem;
+}
+
+.image-header {
+  height: 90rem;
+  width: 50rem;
+  overflow: hidden;
+}
+
+/* End Sub-Hero Image */
+
+/* Section Slides */
+
+.section-slides {
+  padding: 5rem 0 10rem 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slides-card {
+  width: 35rem;
+  position: relative;
+  perspective: 150rem;
+}
+
+.card-img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  background-color: #eee;
+  position: absolute;
+  transition: opacity 1s;
+  z-index: 100;
+}
+.slide-01 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  background-color: #eee;
+  position: absolute;
+  transition: opacity 1s;
+  z-index: 100;
+}
+.slide-02 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  background-color: #eee;
+  position: absolute;
+  transition: opacity 1s;
+  z-index: 100;
+}
+
+.slideshow-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: #eee;
+  margin-top: 5rem;
+}
+
+.slides-card {
+  width: 40rem;
+  position: relative;
+  perspective: 150rem;
+}
+
+.navigation-btn {
+  position: absolute;
+  bottom: 1%;
+  left: 0.5rem;
+  z-index: 100;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+}
+
+.title-clothes {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+
+/* Section Slides */
+
+/* Testimonial */
+
+.testimonial {
+  padding: 10rem 0;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-bg {
+  background-color: rgba(238, 238, 238, 0.7);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  transform: skewX(20deg);
+}
+.story {
+  transform: skewX(-20deg);
+  display: flex;
+}
+
+.story-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5rem;
+}
+
+.story-text {
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
+  font-weight: 300;
+}
+
+.story-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
+.story-paragraph {
+  font-size: 1.9rem;
+  color: var(--grey-color);
+  margin-top: 3rem;
+}
+
+.story-paragraph::first-letter {
+  margin-left: 1rem;
+}
+
+/* End of testimonial */
+
+/* Footer */
+
+.footer {
+  background-color: var(--grey-color);
+  padding: 4rem 0 2rem 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  margin: 0 2rem;
+  background-color: var(--grey-color);
+  padding: 0.3rem 3rem;
+  letter-spacing: 0.3rem;
+  transition: all 0.2s;
+  font-weight: 300;
+}
+
+.footer-link:hover {
+  transform: rotate(-10deg);
+}
+
+.footer-paragraph {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
+  font-weight: 300;
+}
