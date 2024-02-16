@@ -29,17 +29,27 @@ html {
 
 .container-default {
   background-color: var(--dark-color);
-
   margin: 1.5rem 3.5rem;
   box-shadow: 0 1rem 3rem var(--grey-color);
   overflow: hidden;
+}
+
+/* girls Catalog */
+
+.header-catalog-main {
+  width: 100%;
+
+  background-color: #eee;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem;
 }
 
 /* Section Header */
 
 .header {
   width: 100%;
-  height: calc(100vh - 7rem);
+  height: 100vh;
   background: linear-gradient(rgba(230, 229, 229, 0.718), rgb(235, 235, 235)),
     url(https://dbsecommerce.s3.eu-west-1.amazonaws.com/images/landscape/Hero-img-02.jpg)
       center no-repeat;
@@ -52,20 +62,34 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  
 }
 
 .heading {
+
   font-size: 8rem;
   color: var(--dark-color);
 }
 
 .header-paragraph {
+
   font-size: 3rem;
   font-weight: 500;
   color: var(--grey-color);
   max-width: 70rem;
   margin: auto;
 }
+
+/* Sub-Image */
+
+.header-img {
+  height: 80vh;
+  width: 35%;
+  object-fit: cover;
+
+}
+
+
 /* End Section Header */
 
 /* Logo */
@@ -128,26 +152,7 @@ html {
 
 /* End of Logo */
 
-/* Sub-Hero Image */
-
-.header-img {
-  width: 35%;
-  object-fit: cover;
-  padding: 5rem;
-}
-
-.image-header {
-  height: 90rem;
-  width: 50rem;
-  overflow: hidden;
-}
-
-/* End Sub-Hero Image */
-
-
 /* Navbar */
-
-
 
 .navbar-icon-main {
   width: 5.5rem;
@@ -157,7 +162,6 @@ html {
   cursor: pointer;
   flex-direction: column;
   
-
 }
 .open-navbar-icon-main{
   position: fixed;
@@ -272,29 +276,30 @@ html {
 
 /* Section Slides */
 
+
+
 .section-slides {
-  padding: 5rem 0 10rem 0;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  justify-content: center;
+
   background-color: #eee;
+  padding: 5rem 0 10rem 0;
 }
 
-.slide {
-  width: 100%;
+.slideshow-wrapper {
+display: flex;
+justify-content: space-evenly;
+
+  
 }
 
 .slides-card {
   width: 35rem;
+  height: 80vh;
   position: relative;
   perspective: 150rem;
 }
 
 .card-img {
   width: 100%;
-
   object-fit: cover;
 }
 
@@ -329,25 +334,16 @@ html {
   z-index: 100;
 }
 
-.slideshow-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  background-color: #eee;
-  margin-top: 5rem;
-}
-
-.slides-card {
-  width: 40rem;
-  position: relative;
-  perspective: 150rem;
+.description-section {
+  text-align: center;
+  background-color: #05c46b;
 }
 
 .navigation-btn {
   position: absolute;
-  bottom: 1%;
   left: 0.5rem;
-  z-index: 100;
+  top: 50rem;
+  padding: 0.5rem;
   background-color: transparent;
   font-size: 1.5rem;
   border: none;
@@ -355,8 +351,8 @@ html {
   font-weight: 400;
   letter-spacing: 0.2rem;
   padding: 0.5rem;
+  z-index: 200;
 }
-
 
 .title-clothes {
   font-size: 2.5rem;
@@ -375,6 +371,7 @@ html {
 .testimonial {
   padding: 10rem 0;
   position: relative;
+ 
 }
 
 .video-container {
@@ -480,6 +477,10 @@ html {
   font-weight: 300;
 }
 
+/* End of Footer */
+
+/* Section Catalog */
+
 .card-img-catalog {
   width: 100%;
   object-fit: cover;
@@ -493,7 +494,6 @@ html {
   margin: 1.5rem 3.5rem;
   box-shadow: 0 1rem 3rem var(--grey-color);
   overflow: hidden;
-  position: relative;
 }
 
 .header-catalog {
@@ -884,7 +884,7 @@ html {
   margin-top: 3rem;
   top: 5rem;
   font-size: 7rem;
-  font-weight: 300;
+  font-weight: 100;
   color: var(--dark-color);
   letter-spacing: 3rem;
 }
@@ -964,6 +964,13 @@ html {
   transition: all 0.3s;
 }
 
+.form-input-wrapper:nth-child(1),
+.form-input-wrapper:nth-child(4) {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
 .change-sign .form-input-wrapper:nth-child(1),
 .change-sign .form-input-wrapper:nth-child(4) {
   visibility: visible;
@@ -980,6 +987,7 @@ html {
   border: 0.1rem solid #555;
   border-radius: 5rem;
 }
+
 
 .message {
   position: absolute;
@@ -1024,8 +1032,115 @@ html {
 .form-btn:hover {
   box-shadow: 0.5rem 0.5rem 2rem #ddd;
 }
+/* End of Registration and Login page */
+
+/* Payment Page */
+
+.payment-section {
+  background-color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ 
+}
+.sub-payment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-wrapper {
+  width: 60%;
+  height: 100vh;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.contact-heading {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 3rem;
+  margin-bottom: 2rem;
+  left: 3rem;
+  text-align: center;
+}
+.payment-btn {
+  width: 20rem;
+  height: 4.5rem;
+  color: #555;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  align-items: center;
+  border-radius: 5rem;
+  border: 0.1rem solid #555;
+  padding: 0.8rem 3rem;
+  
+}
+
+
+
+
+
+
+
+
+
+.payment-card {
+  margin: 1.5rem 0;
+  align-items: center;
+
+}
+.form-payment input{
+  width: 50rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  letter-spacing: 0.2rem;
+  border: 0.1rem solid #555;
+  margin: 2rem 0;
+}
+
+
+
+.form-payment {
+  display: flex;
+  flex-direction: column;
+}
+.right-info-card {
+  width: 40%;
+  height: 100vh;
+  background-color: #ddd;
+  right: -10rem;
+}
+.card-sub-wrapper {
+  display: flex;
+  
+}
+.card-sub-wrapper input {
+  width: 23.5rem;
+  margin-right: 3rem;
+ 
+}
+
+
+
+/* End of Payment Page */
+
 
 @media (max-width: 1400px) {
+.slideshow-wrapper{
+  flex-direction: column;
+  align-items: center; 
+}
+.testimonial-bg{
+  width: 85%;
+}
   .form-bg {
     transform: rotate(0);
     height: 55rem;
@@ -1049,15 +1164,30 @@ html {
 }
 
 @media (max-width: 1000px) {
-  .form-heading {
+  .heading {
     font-size: 5rem;
-    margin-top: 5rem;
+  }
+
+  .form-bg {
+    width: 55rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+
+  .form input {
+    width: 40rem;
   }
   .cloth-description {
     top: 10rem;
     font-size: 1rem;
   }
 
+
+  .gallery-link {
+    width: 40rem;
+    height: 25rem;
+    margin: 5rem;
+  }
   .btn-select input {
     display: flex;
     font-size: 1rem;
@@ -1100,15 +1230,48 @@ html {
     padding: 0.3rem 2rem;
     margin: 0 1rem;
   }
+  .nav-list-main {
+    flex-direction: column;
+  }
+  .nav-link-main {
+    flex-grow: 1;
+  }
+  .header-text {
+    position:absolute;
+    top: 40%;
+  
+  }
+  .heading {
+    font-size: 6rem;
+  }
+  .heading-paragraph {
+    font-size: 2.5rem;
+  }
+
+.testimonial-bg {
+  transform: skew(0);
+  }
+  .story {
+    transform: skew(0);
+    flex-direction: column;
+    align-items: center;
+  } 
+  .story-img{
+    margin-top: 3rem;
+  }
+  .footer-link {
+    padding: 0.3rem 2rem;
+    margin: 0 1rem;
+  }
+
 }
 
 @media (max-width: 700px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
-
   .form-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     top: 10rem;
   }
   .form-bg {
@@ -1118,7 +1281,7 @@ html {
   }
   .form-btn-top {
     left: 5rem;
-    top: 2rem;
+    top: 7rem;
   }
   .form-btn-top button {
     font-size: 2rem;

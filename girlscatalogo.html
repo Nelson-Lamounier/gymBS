@@ -118,62 +118,66 @@
             </h1>
           </div>
         </div>
-        <section class="section-signup">
-          <h1 class="form-heading">
-            <span class="heading-span-1">Sign</span
-            ><span class="heading-span-2">In</span>
-          </h1>
-          <div class="form-btn-top">
-            <button onclick="signUpIn()" class="signin-btn">SignIn</button>
-            <button onclick="signUpIn()" class="signup-btn">SignUp</button>
-          </div>
-          <div class="form-bg"></div>
-          <form class="form sign-in">
-            <div class="form-input-wrapper">
-              <input
-                outocomplete="off"
-                type="text"
-                class="form-input"
-                id="username"
-                placeholder="Your Name"
-              />
-              <p class="message">Error Message</p>
-            </div>
-            <div class="form-input-wrapper">
-              <input
-                outocomplete="off"
-                type="text"
-                class="form-input"
-                id="email"
-                placeholder="Email Address"
-              />
-              <p class="message">Error Message</p>
-            </div>
-            <div class="form-input-wrapper">
-              <input
-                outocomplete="off"
-                type="password"
-                class="form-input"
-                id="password"
-                placeholder="Password"
-              />
-              <p class="message">Error Message</p>
-            </div>
-            <div class="form-input-wrapper">
-              <input
-                outocomplete="off"
-                type="password"
-                class="form-input"
-                id="password2"
-                placeholder="Confirm Password"
-              />
-              <p class="message">Error Message</p>
-            </div>
-            <input type="submit" value="Submit" class="form-btn" />
-          </form>
-        </section>
       </header>
       <!-- End of Header -->
+     
+      <div class="payment-section">
+
+        <div class="payment-wrapper">
+ 
+          <div class="payment-card"> 
+          <h1 class="contact-heading">Payment</h1>
+          <form action="" class="form-payment">
+            <div class="payment-input">
+           
+              <input
+                type="text"
+                class="payment-input"
+                id="card-name"
+                placeholder="Name on card"
+              />
+            </div>
+            <div class="payment-input">
+              <input
+                type="text"
+                class="payment-input"
+                id="card-number"
+                placeholder="Card Number"
+              />
+            </div>
+            <div class="card-sub-wrapper">
+              
+                <input
+                  type="text"
+                  class="payment-input"
+                  id="card-expiry-date"
+                  placeholder="Expiry Date(MM / YY)"
+                />
+              
+              
+                <input
+                  type="text"
+                  class="payment-input"
+                  id="card-cvv"
+                  placeholder="Security code"
+                />
+             
+              
+            </div>
+            
+           
+          </div>
+          <div class="btn-payment-bottom"> 
+
+          <button class="payment-btn" id="prev" disabled>Submit</button>
+          <button class="payment-btn" id="next">Submit</button>
+        </div>
+            <div class="payment-status"></div>
+          </form>
+        </div>
+        <div class="right-info-card"></div>
+      </div>
+      
 
       <!--Catalog-->
 
